@@ -6,7 +6,7 @@ import { Mosaic } from "react-loading-indicators";
 import Navbar from "./components/Navbar";
 import ExperienceSection from "./components/ExperiencePages/ExperienceSection";
 import ProjectSection from "./components/ProjectPages/ProjectSection";
-
+import ContactSection from "./components/ContactPages/ContactSection";
 // Dynamic import komponen tanpa loader individual,
 // karena kita akan tampilkan loader global
 const HeroSection = dynamic(() => import("./components/HeroPages/HeroSection"), {
@@ -55,6 +55,7 @@ export default function Home() {
         <AboutSection />
         <ExperienceSection />
         <ProjectSection />
+        <ContactSection/>
       </Suspense>
 
       {/* Footer */}

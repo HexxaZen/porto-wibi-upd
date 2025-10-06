@@ -3,7 +3,7 @@
 import React, { Suspense } from "react";
 import { HexagonBackground } from "./hexxagon-background";
 import AnimatedContent from "../animations/AnimatedContent/AnimatedContent";
-
+import Link from "next/link";
 const HeroSection: React.FC = () => {
   return (
     <section className="relative flex flex-col items-center justify-center min-h-screen w-full overflow-hidden text-center px-4">
@@ -33,15 +33,26 @@ const HeroSection: React.FC = () => {
                 <img
                   src="/assets/img/hero.png"
                   alt="Background Texture"
-                  className="w-[590px] max-w-full mb-8"
+                  className="w-[750px] mt-[15ch] max-w-full mb-8"
                 />
-                <div className="absolute mt-5 flex flex-col items-center justify-center">
-                <h2 className="font-sharetech text-4xl md:text-5xl lg:text-6xl font-bold neon-text">
-                  DWI AGUS WIBISANA
-                </h2>
-                <div className="font-russo text-3xl md:text-4xl lg:text-5xl font-bold neon-text mt-2">
-                  FULL-STACK DEVELOPER
-                </div>
+                <div className="absolute mt-[20ch] flex flex-col items-center justify-center">
+                  <h2 className="font-sharetech text-4xl md:text-5xl lg:text-6xl font-bold text-white shadow-neutral-800 mb-2">
+                    DWI AGUS WIBISANA
+                  </h2>
+                  <div className="font-russo text-3xl md:text-4xl lg:text-5xl font-bold neon-text mt-2">
+                    FULL-STACK DEVELOPER
+                  </div>
+                <Link
+                  href="/"
+                  className="inline-block mt-8 px-6 sm:px-8 py-3 text-base sm:text-lg font-semibold 
+             text-[#0a0a0a] bg-[#e8f5ff] rounded-full 
+             transition-all duration-300 ease-in-out 
+             shadow-xl hover:bg-cyan-400 hover:text-white 
+             hover:shadow-[0_0_20px_4px_rgba(34,211,238,0.8)] 
+             hover:scale-105"
+                >
+                  Hire Me !
+                </Link>
                 </div>
               </div>
             </AnimatedContent>

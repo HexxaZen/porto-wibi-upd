@@ -65,10 +65,12 @@ const AboutSection: React.FC = () => {
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-10 font-sharetech neon-text">
             ABOUT ME
           </h2>
-
-          {/* --- CONTAINER FLEX UTAMA --- */}
-          {/* Menggunakan 'lg:flex lg:flex-row' untuk tata letak berdampingan di layar besar. */}
-          {/* Menggunakan 'lg:text-left' agar teks sejajar kiri di layar besar, dan 'items-center' untuk perataan vertikal. */}
+          </motion.div>
+          <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.8, ease: 'easeOut' }}>
           <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 mb-10 text-justify lg:text-left">
 
             {/* --- KOLOM KIRI: DESKRIPSI --- */}
@@ -108,8 +110,12 @@ const AboutSection: React.FC = () => {
             </div>
           </div>
           {/* --- AKHIR CONTAINER FLEX UTAMA --- */}
-
-          {/* Logo Loop */}
+          </motion.div>
+          <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.8, ease: 'easeOut' }}>
           <div className="mt-10 w-full h-32 sm:h-40 md:h-48 lg:h-56">
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-6">My Technical Skills:</h2>
             <LogoLoop
@@ -138,8 +144,7 @@ const AboutSection: React.FC = () => {
           >
             See My Projects
           </Link>
-
-        </motion.div>
+          </motion.div>
       </div>
     </section>
   );

@@ -3,21 +3,17 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Menu, X } from 'lucide-react'; // Menggunakan ikon dari lucide-react
+import { Menu, X } from 'lucide-react';
 
 // Definisikan item menu
 const navItems = [
   { name: 'HOME', href: '/' },
-  { name: 'ABOUT', href: '/' },
+  { name: 'ABOUT', href: '#AboutSection' },
   { name: 'EXPERIENCES', href: '/' },
   { name: 'PROJECTS', href: '/' },
   { name: 'CONTACT', href: '/' },
 ];
 
-/**
- * Komponen Navbar dengan efek Fluid Glassmorphism yang Animatif dan Responsif.
- * Membutuhkan Tailwind CSS 3.x/4.x dan properti CSS kustom.
- */
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -34,7 +30,6 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    // Navbar utama: fixed, penuh lebar, dan z-index tinggi
     <nav 
       className="fixed top-0 left-0 w-full z-50 transition-all duration-300 rounded-full mx-auto mt-4"
       style={glassmorphismStyle}
