@@ -35,25 +35,33 @@ const HeroSection: React.FC = () => {
                   alt="Background Texture"
                   className="w-[750px] mt-[15ch] max-w-full mb-8"
                 />
-                <div className="absolute mt-[20ch] flex flex-col items-center justify-center">
-                  <h2 className="font-sharetech text-4xl md:text-5xl lg:text-6xl font-bold text-white shadow-neutral-800 mb-2">
-                    DWI AGUS WIBISANA
-                  </h2>
-                  <div className="font-russo text-3xl md:text-4xl lg:text-5xl font-bold neon-text mt-2">
-                    FULL-STACK DEVELOPER
-                  </div>
-                <Link
-                  href="/"
-                  className="inline-block mt-8 px-6 sm:px-8 py-3 text-base sm:text-lg font-semibold 
-             text-[#0a0a0a] bg-[#e8f5ff] rounded-full 
-             transition-all duration-300 ease-in-out 
-             shadow-xl hover:bg-cyan-400 hover:text-white 
-             hover:shadow-[0_0_20px_4px_rgba(34,211,238,0.8)] 
-             hover:scale-105"
-                >
-                  Hire Me !
-                </Link>
+
+                <div className="absolute mt-[20ch] flex flex-col items-center justify-center text-center">
+                <h2 className="font-sharetech text-4xl md:text-5xl lg:text-6xl font-bold text-white shadow-neutral-800 mb-2">
+                  DWI AGUS WIBISANA
+                </h2>
+
+                <div className="font-russo text-3xl md:text-4xl lg:text-5xl font-bold neon-text mt-2">
+                  FULL-STACK DEVELOPER
                 </div>
+
+                {/* Tombol sejajar menyamping */}
+                <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+                  <Link
+                    href="/"
+                    className="px-6 sm:px-8 py-3 text-base sm:text-lg font-semibold text-[#0a0a0a] bg-[#e8f5ff] rounded-full transition-all duration-300 ease-in-out shadow-xl hover:bg-cyan-400 hover:text-white hover:shadow-[0_0_20px_4px_rgba(34,211,238,0.8)] hover:scale-105"
+                  >
+                    Hire Me !
+                  </Link>
+
+                  <Link
+                    href="/"
+                    className="px-6 sm:px-8 py-3 text-base sm:text-lg font-semibold text-[#ededed] bg-cyan-400 rounded-full transition-all duration-300 ease-in-out shadow-xl hover:bg-[#e8f5ff] hover:text-[#0a0a0a] hover:shadow-[0_0_20px_4px_rgba(34,211,238,0.8)] hover:scale-105"
+                  >
+                    DOWNLOAD CV
+                  </Link>
+                </div>
+              </div>
               </div>
             </AnimatedContent>
           </HexagonBackground>
