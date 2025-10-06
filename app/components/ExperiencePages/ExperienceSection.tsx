@@ -17,10 +17,7 @@ const experiences: Experience[] = [
     title: 'Laravel Developer',
     company: 'PT. Sinergi Inovasi Tekno | Jakarta',
     duration: 'Juni 2025 - September 2025',
-    description: [
-      'Memimpin pengembangan arsitektur mikroservice menggunakan Next.js, Node.js, dan PostgreSQL.',
-      'Bertanggung jawab atas implementasi CI/CD pipelines, mengurangi waktu deployment hingga 40%.',
-      'Mentoring tim junior dalam praktik kode bersih dan TDD.',
+    description: ['Berperan aktif dalam tim pengembangan aplikasi skala besar (HRIS PLN Nusa Daya dan KPI Kinerja) dengan spesialisasi Backend Development menggunakan Laravel (PHP). Juga bertanggung jawab penuh atas pengembangan dan deployment website company profile Starplus.co.id menggunakan Laravel dan TypeScript.'
     ],
   },
   {
@@ -29,9 +26,7 @@ const experiences: Experience[] = [
     company: 'Merra Coffee and Talk | Kudus',
     duration: 'Desember 2024 - Juni 2025',
     description: [
-      'Mengembangkan dan memelihara 5+ proyek klien menggunakan React dan Tailwind CSS.',
-      'Meningkatkan performa Lighthouse dari 50 menjadi 95+ di seluruh aplikasi.',
-      'Berpartisipasi aktif dalam sesi desain UX/UI untuk memastikan kelayakan teknis.',
+      'Merancang, membangun, dan memelihara Merracota.my.id (Aplikasi Inventory), sebuah sistem web untuk pendataan stok bahan baku dan inventaris kedai kopi, termasuk pengawasan operasional dan pemeliharaan berkala.',
     ],
   },
   {
@@ -40,9 +35,7 @@ const experiences: Experience[] = [
     company: 'Freelance | Remote',
     duration: 'Juni 2023 - Sekarang',
     description: [
-      'Menyelesaikan 10+ proyek untuk klien di berbagai industri, termasuk e-commerce, pendidikan, dan kesehatan.',
-      'Membangun aplikasi web responsif menggunakan React, Next.js, dan Tailwind CSS.',
-      'Berkomunikasi secara efektif dengan klien untuk memahami kebutuhan mereka dan memberikan solusi yang sesuai.',
+      'Berhasil mengembangkan Landing Page company profile (Daycomp Percetakan) dan demo UI e-commerce (Code Coffee) menggunakan HTML, CSS, dan JavaScript. Turut mengembangkan aplikasi berbasis website untuk kebutuhan skripsi client (Aplikasi Pemantauan TPK dan E-Pengaduan) menggunakan PHP Native dan Laravel.',
     ],
   },
 ];
